@@ -1,0 +1,25 @@
+var classapp_1_1domain_1_1entities_1_1_corridas =
+[
+    [ "getAvaliacaoCondutor", "classapp_1_1domain_1_1entities_1_1_corridas.html#a27c476ca21e481b865b19ac29d5b1da6", null ],
+    [ "getAvaliacaoVeiculo", "classapp_1_1domain_1_1entities_1_1_corridas.html#ab3dcb941d250aeaad024d2dab12e5f09", null ],
+    [ "getDataFim", "classapp_1_1domain_1_1entities_1_1_corridas.html#a597ac71da466dc62d7e6eb3195ec360d", null ],
+    [ "getDataInicio", "classapp_1_1domain_1_1entities_1_1_corridas.html#a2f137769a6f44d742b8da10c02940ab0", null ],
+    [ "getDestino", "classapp_1_1domain_1_1entities_1_1_corridas.html#add331961c670cfe52ff899ba5c03deac", null ],
+    [ "getDistancia", "classapp_1_1domain_1_1entities_1_1_corridas.html#ad3fa00f4cbf609f6d8275cbe2588c60a", null ],
+    [ "getFkAluguel", "classapp_1_1domain_1_1entities_1_1_corridas.html#a02a84fffb2c9c62b229d79193f09ab57", null ],
+    [ "getFkCPFPassageiro", "classapp_1_1domain_1_1entities_1_1_corridas.html#a775dc921de222a25a4edd1b6ad87c50b", null ],
+    [ "getIdCorrida", "classapp_1_1domain_1_1entities_1_1_corridas.html#aa6ce5e9ee15e91668c53d50f2ce150a2", null ],
+    [ "getOrigem", "classapp_1_1domain_1_1entities_1_1_corridas.html#ae88b4e35c766314e71a919098e59c88e", null ],
+    [ "getTarifa", "classapp_1_1domain_1_1entities_1_1_corridas.html#a1741b8a603164fdd125edd432dd2c328", null ],
+    [ "setAvaliacaoCondutor", "classapp_1_1domain_1_1entities_1_1_corridas.html#a45ef986449b485b376de078bfbb5ddff", null ],
+    [ "setAvaliacaoVeiculo", "classapp_1_1domain_1_1entities_1_1_corridas.html#a99a21815d9ed8062950bc7ea265b86da", null ],
+    [ "setDataFim", "classapp_1_1domain_1_1entities_1_1_corridas.html#a8be62044090b8b964eeb64f067d1e293", null ],
+    [ "setDataInicio", "classapp_1_1domain_1_1entities_1_1_corridas.html#a76675d93d0a5a9459104c3f9b702ab3d", null ],
+    [ "setDestino", "classapp_1_1domain_1_1entities_1_1_corridas.html#a3b5b86fa470d56e31a072b5166df823f", null ],
+    [ "setDistancia", "classapp_1_1domain_1_1entities_1_1_corridas.html#a3eaa0a85178228685d0f7979cc044cda", null ],
+    [ "setFkAluguel", "classapp_1_1domain_1_1entities_1_1_corridas.html#a34f9a5344b030f3392fd503b1f21f260", null ],
+    [ "setFkCPFPassageiro", "classapp_1_1domain_1_1entities_1_1_corridas.html#a5199d905deac397f7cb9b24b622b2949", null ],
+    [ "setIdCorrida", "classapp_1_1domain_1_1entities_1_1_corridas.html#ace71cd128919455528264a5de91d645c", null ],
+    [ "setOrigem", "classapp_1_1domain_1_1entities_1_1_corridas.html#a7d539dc42fb1f5e1a9acd6bdd0658cfe", null ],
+    [ "setTarifa", "classapp_1_1domain_1_1entities_1_1_corridas.html#a7d88eadfcd089c3895012316cd2e1acc", null ]
+];

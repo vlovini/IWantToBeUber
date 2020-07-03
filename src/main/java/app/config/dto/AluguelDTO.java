@@ -26,7 +26,7 @@ public class AluguelDTO {
     @JsonProperty("placaVeiculo")
     String placaVeiculo;
 
-
+/// CLASSE CONSTRUTORA, RECEBE OS PARAMETROS INFORMADOS PELO USUÁRIO E OS ATRIBUI AO OBJETO CRIADO UTILIZANDOS OS MÉTODOS SETTERS
     public AluguelDTO(int idAluguel, Date dataInicio, String fkCondutor, String fkVeiculo, Date dataFim){
         this.setIdAluguel(idAluguel);
         this.setDataInicio(dataInicio);
@@ -35,6 +35,9 @@ public class AluguelDTO {
         this.setDataFim(dataFim);
     }
 
+
+/// CLASSE CONSTRUTORA 2
+/// ESSA AQUI NAO...
     public int getIdAluguel() {
         return idAluguel;
     }
