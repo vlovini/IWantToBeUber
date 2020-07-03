@@ -9,16 +9,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/*! \brief Projeção JPA para aplicação do conjunto de entidades "Condutores" no Banco de dados - Herda atributos básicos da classe "AbstractPessoa" */
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
+
 @Entity(name = "Condutores")
 @Table(name = "CONDUTORES")
 @JsonIgnoreProperties(ignoreUnknown = true)
-
- /*! \brief Projeção JPA do conjunto de entidades "Condutores" no Banco de dados - Herda atributos básicos da classe "AbstractPessoa" */
- /*! \author Vinícius Lora, José Ricardo Bock */
- /*! \since  28/05/2020 */
- /*! \date  31/05/2020 */
-
-
 public class Condutores extends AbstractPessoa {
 
     @Id
