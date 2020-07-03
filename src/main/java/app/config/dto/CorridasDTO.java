@@ -3,7 +3,11 @@ package app.config.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
-
+/*! \brief CorridasDTO - Data Transfer Object */
+/*! \details Classe com obejtivo de mapear objetos de entrada/saída da aplicação. Conjunto de atributos mapeados com propriedades JSON a fim de serem mapeados pela bibliteca JacksonXML serem parseadas em um objeto JSON */
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
 public class CorridasDTO {
     @JsonProperty("idCorrida")
     int idCorrida;
