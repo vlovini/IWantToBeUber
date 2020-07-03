@@ -22,6 +22,7 @@ public class Condutores extends AbstractPessoa {
     @Id
     @Column(name = "CPF_CONDUTOR")
     @JsonProperty("cpfCondutor")
+    /** Chave primaria da tabela Condutores */
     private String cpfCondutor;
 
     public String getCpfCondutor() {
