@@ -7,7 +7,10 @@ import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
-
+/*! \brief Classe pai com estrutura de atributos base de dados referentes a pessoas*/
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
 @MappedSuperclass
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AbstractPessoa {

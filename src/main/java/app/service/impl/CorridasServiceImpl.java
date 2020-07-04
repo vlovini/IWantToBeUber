@@ -13,7 +13,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*! \brief Implementação/Componente - Implementação do serviço dedicado a lógica de negócio no cadastro e obtenção de corridas no sistema. */
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
 @Component
 public class CorridasServiceImpl implements CorridasService {
 
@@ -26,6 +29,11 @@ public class CorridasServiceImpl implements CorridasService {
     @Autowired
     CorridasRepository corridasRepository;
 
+    /**
+     * @brief Get de todas as corridas disponíveis no sistema
+     * @details Retorno de corridas persistidas no banco
+     * @return Lista de objetos do tipo "CorridaDTO".
+     */
     @Override
     public List<CorridasDTO> getCorridas(){
         List<CorridasDTO> corridasDTOS = new ArrayList<>();
@@ -36,11 +44,22 @@ public class CorridasServiceImpl implements CorridasService {
         return corridasDTOS;
     }
 
+    /**
+     * @brief Get de uma dada corrida se disponível no sistema
+     * @details Retorno de corrida para um dado 'id';
+     * @param[in] int - ID da corrida desejada
+     * @return Objeto do tipo "CorridaDTO".
+     */
     @Override
     public CorridasDTO getCorrida(int idCorrida){
         return this.getCorridaDTOFromCorrida(corridasRepository.getOne(idCorrida));
     }
-
+    /**
+     * @brief Para uma dada corrida, cria um objeto CorridaDTO
+     * @details Método auxiliar que retorna um "CorridaDTO" para uma dada corrida
+     * @param[in] Corrida - Corrida com dados preenchidos
+     * @return Objeto populado do tipo "CorridaDTO".
+     */
     private CorridasDTO getCorridaDTOFromCorrida(Corridas c){
         CorridasDTO corridasDTO = new CorridasDTO(
                 c.getIdCorrida(),
@@ -61,6 +80,11 @@ public class CorridasServiceImpl implements CorridasService {
         return corridasDTO;
     }
 
+    /**
+     * @brief Set de uma dada corrida se disponível no sistema
+     * @details Persiste uma corrida com os atributos passados pelo usuário oriundos da API;
+     * @param[in] Corridas - Objeto do tipo "Corridas"
+     */
     @Override
     public void setCorrida(Corridas corrida) throws GenericJDBCException{
         try {
