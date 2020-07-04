@@ -34,7 +34,8 @@ var NAVTREE =
       [ "Hierarquia de Classes", "hierarchy.html", "hierarchy" ],
       [ "Membros de classe", "functions.html", [
         [ "Todos", "functions.html", "functions_dup" ],
-        [ "Funções", "functions_func.html", "functions_func" ]
+        [ "Funções", "functions_func.html", "functions_func" ],
+        [ "Variáveis", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Arquivos", "files.html", [
@@ -46,7 +47,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_abstract_pessoa_8java.html",
-"classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#acd7ea483f20abbf6b172427ba73a51e4"
+"classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a17c2487cafe0c51af12f10c0d485aeb7"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

@@ -25,5 +25,18 @@ var classapp_1_1domain_1_1views_1_1_detalhes_corrida =
     [ "setNomePassageiro", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#adf676f1c390a7d93956fa64369344f45", null ],
     [ "setOrigem", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a57bfb7f0af10b79623db3b7599559495", null ],
     [ "setValor", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#ae80c346ba0a98d0783dd362c3c7d9b87", null ],
-    [ "setVeiculo", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a17c2487cafe0c51af12f10c0d485aeb7", null ]
+    [ "setVeiculo", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a17c2487cafe0c51af12f10c0d485aeb7", null ],
+    [ "avaliacaoCondutor", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a7d747f8004422f85f1dcee808ccbce8d", null ],
+    [ "avaliacaoVeiculo", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#acddcf8e83fef571c23a30a1a69ea957c", null ],
+    [ "cpfCondutor", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a597c96213e6f72ae86a71c0adb4e7f06", null ],
+    [ "cpfPassageiro", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a94c8548be7e66185d88eb9a66a5a0cd3", null ],
+    [ "destino", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a9577c34e0a858bef315eebfbc511db18", null ],
+    [ "duracao", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a603bb7d4d9cbbcc72c911d131b3d4679", null ],
+    [ "horaInicio", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a8f17d1299a02ac5689365d38b403b5f9", null ],
+    [ "index", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#ac9c5c2d15c7f96717484878151738604", null ],
+    [ "nomeCondutor", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a331f8bf65412bd0a783b4eb984b8e8e4", null ],
+    [ "nomePassageiro", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#aefeb5e1168ea20a30711aff54b5b7150", null ],
+    [ "origem", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a9b62248bdafaaa9bea82304af34cd238", null ],
+    [ "valor", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#a607d8c8376d545239a6f900bf4325449", null ],
+    [ "veiculo", "classapp_1_1domain_1_1views_1_1_detalhes_corrida.html#ada6b83b4386bb0ee57fb3efd738490cc", null ]
 ];

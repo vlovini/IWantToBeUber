@@ -9,20 +9,31 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity(name = "Condutores")
 @Table(name = "CONDUTORES")
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Condutores extends AbstractPessoa {
 
+
+/*! \brief Projeção JPA do conjunto de entidades "Condutores" no Banco de dados - Herda atributos básicos da classe "AbstractPessoa" */
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
+public class Condutores extends AbstractPessoa {
     @Id
     @Column(name = "CPF_CONDUTOR")
     @JsonProperty("cpfCondutor")
+/*! @param cpfCondutor é uma primary key */
     private String cpfCondutor;
-
+/**
+ * Método para invocar o CPF de um condutor
+*/
     public String getCpfCondutor() {
         return cpfCondutor;
     }
-
+/**
+  * Método para invocar o CPF de um condutor
+*/
     public void setCpfCondutor(String cpfCondutor) {
         this.cpfCondutor = cpfCondutor;
     }

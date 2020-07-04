@@ -5,5 +5,8 @@ var classapp_1_1domain_1_1entities_1_1_modelos =
     [ "getNome", "classapp_1_1domain_1_1entities_1_1_modelos.html#a0277d21fb7d9e70b225093e40d565b92", null ],
     [ "setFkMarca", "classapp_1_1domain_1_1entities_1_1_modelos.html#a4efc4807f81841bbfcb325df1134f307", null ],
     [ "setIdModelo", "classapp_1_1domain_1_1entities_1_1_modelos.html#a1d2af4336e478fc2e401b150802d4bc6", null ],
-    [ "setNome", "classapp_1_1domain_1_1entities_1_1_modelos.html#ae04f6b96c5423480c557d1424f043074", null ]
+    [ "setNome", "classapp_1_1domain_1_1entities_1_1_modelos.html#ae04f6b96c5423480c557d1424f043074", null ],
+    [ "fkMarca", "classapp_1_1domain_1_1entities_1_1_modelos.html#adbc36c94d7f6c3f2aa38f6291b9d7746", null ],
+    [ "idModelo", "classapp_1_1domain_1_1entities_1_1_modelos.html#ad066f29b32faa8dc3462a53a69ed5645", null ],
+    [ "nome", "classapp_1_1domain_1_1entities_1_1_modelos.html#a7047a5ec4b480e5d71b850ff3c288bf0", null ]
 ];
