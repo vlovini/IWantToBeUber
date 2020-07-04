@@ -25,6 +25,16 @@
 var NAVTREE =
 [
   [ "IWantToBeUber", "index.html", [
+    [ "Página Inicial", "index.html", [
+      [ "Introdução", "index.html#intro_sec", null ],
+      [ "Fluxograma da Aplicação", "index.html#flux_sec", null ],
+      [ "Cenários de Teste", "index.html#centest_sec", [
+        [ "Cenário 1", "index.html#test1_sec1", null ],
+        [ "Cenário 2", "index.html#test1_sec2", null ],
+        [ "Cenário 3", "index.html#test1_sec3", null ]
+      ] ],
+      [ "Considerações Finais", "index.html#consfinais_sec", null ]
+    ] ],
     [ "Pacotes", "namespaces.html", [
       [ "Pacotes", "namespaces.html", "namespaces_dup" ]
     ] ],

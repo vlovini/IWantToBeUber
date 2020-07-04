@@ -1,0 +1,30 @@
+/*! \mainpage Página Inicial
+ *
+ * \section intro_sec Introdução
+ *
+ * This is the introduction.
+ *
+ * \section flux_sec Fluxograma da Aplicação
+ *
+ * Eis aqui o fluxograma da aplicação
+ * @image html fluxograma.JPG "Fluxograma"
+ *
+ * \section centest_sec Cenários de Teste
+ * Foram realizados três cenários de teste funcional da aplicação
+ * \subsection test1_sec1 Cenário 1
+ *  
+ * Descrição do cenário de teste 1
+ *
+ * \subsection test1_sec2 Cenário 2
+ *
+ * Descrição do cenário de teste 2
+ *
+ * \subsection test1_sec3 Cenário 3
+ *
+ * Descrição do cenário de teste 3
+ *
+ * \section consfinais_sec Considerações Finais
+ *
+ * Nada a considerar
+ *
+ */
