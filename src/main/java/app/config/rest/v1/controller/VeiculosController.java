@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+/*! \brief VeiculosController */
+/*! \details A classe VeiculosController intermedia o acesso do programa ao banco de dados, buscando um ou mais objetos veiculos, com base na estrutura de objeto definida em VeiculosDTO.*/
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
+
 @RestController
 @RequestMapping("/veiculos")
 public class VeiculosController {
@@ -27,11 +33,13 @@ public class VeiculosController {
 
     @GetMapping
     public List<VeiculosDTO> getVeiculos() {
+/// Este método invoca a classe que trata direto com o banco (veiculosService) e retorna uma lista de objetos do tipo VeiculosDTO que contém todos os registros de veiculos contidos no banco de dados.
         return veiculosService.getCarros();
     }
 
     @GetMapping("/{renavam}")
     public VeiculosDTO getVeiculo(@PathVariable String renavam) {
+/// Este método invoca a classe que trata direto com o banco (veiculosService) e retorna um objeto do tipo VeiculosDTO referente ao RENAVAM informado como parâmetro.
         return veiculosService.getCarro(renavam);
     }
 

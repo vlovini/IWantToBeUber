@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('classapp_1_1config_1_1rest_1_1v1_1_1co
 <div class="title">Referência da Classe app.config.rest.v1.controller.VeiculosController</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_veiculos_controller.html" title="VeiculosController.">VeiculosController</a>.  
+ <a href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_veiculos_controller.html#details">Mais...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos Públicos</h2></td></tr>
@@ -111,7 +114,12 @@ Métodos Públicos</h2></td></tr>
 <tr class="memitem:ac98421818ce22e3fa19d86cd533ba06b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_veiculos_controller.html#ac98421818ce22e3fa19d86cd533ba06b">setModelo</a> (@Valid @RequestBody <a class="el" href="classapp_1_1domain_1_1entities_1_1_modelos.html">Modelos</a> modelo)</td></tr>
 <tr class="separator:ac98421818ce22e3fa19d86cd533ba06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Métodos</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>A classe <a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_veiculos_controller.html" title="VeiculosController.">VeiculosController</a> intermedia o acesso do programa ao banco de dados, buscando um ou mais objetos veiculos, com base na estrutura de objeto definida em VeiculosDTO.</p>
+<dl class="section author"><dt>Autor</dt><dd>Vinícius Lora, José Ricardo Bock</dd></dl>
+<dl class="section since"><dt>Desde</dt><dd>28/05/2020</dd></dl>
+<dl class="section date"><dt>Data</dt><dd>31/05/2020 </dd></dl>
+</div><h2 class="groupheader">Métodos</h2>
 <a id="ab34a0b7aac903b37596e0260868fde1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab34a0b7aac903b37596e0260868fde1c">&#9670;&nbsp;</a></span>getMarca()</h2>
 
@@ -127,9 +135,9 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> marcasRepository.getOne(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> marcasRepository.getOne(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -147,9 +155,9 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                   {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> marcasRepository.findAll();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                   {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> marcasRepository.findAll();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -168,9 +176,9 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> modelosRepository.getOne(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> modelosRepository.getOne(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -188,9 +196,9 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                     {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> modelosRepository.findAll();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                     {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> modelosRepository.findAll();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -209,9 +217,10 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> veiculosService.<a class="code" href="interfaceapp_1_1service_1_1_veiculos_service.html#a3bdd45c8fb7097a988bd0db5b2b0d127">getCarro</a>(renavam);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<p>Este método invoca a classe que trata direto com o banco (veiculosService) e retorna um objeto do tipo VeiculosDTO referente ao RENAVAM informado como parâmetro.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> veiculosService.<a class="code" href="interfaceapp_1_1service_1_1_veiculos_service.html#a3bdd45c8fb7097a988bd0db5b2b0d127">getCarro</a>(renavam);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -229,9 +238,10 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                           {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> veiculosService.<a class="code" href="interfaceapp_1_1service_1_1_veiculos_service.html#a4f11890b2a37740cf31fa760ecbcefb0">getCarros</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<p>Este método invoca a classe que trata direto com o banco (veiculosService) e retorna uma lista de objetos do tipo VeiculosDTO que contém todos os registros de veiculos contidos no banco de dados.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                           {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> veiculosService.<a class="code" href="interfaceapp_1_1service_1_1_veiculos_service.html#a4f11890b2a37740cf31fa760ecbcefb0">getCarros</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,9 +260,9 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                          {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        marcasRepository.save(marca);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                          {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        marcasRepository.save(marca);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,9 +281,9 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                             {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        modelosRepository.save(modelo);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                             {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        modelosRepository.save(modelo);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>

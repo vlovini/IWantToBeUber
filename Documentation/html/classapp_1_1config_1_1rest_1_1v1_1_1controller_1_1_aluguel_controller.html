@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('classapp_1_1config_1_1rest_1_1v1_1_1co
 <div class="title">Referência da Classe app.config.rest.v1.controller.AluguelController</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_aluguel_controller.html" title="AluguelController.">AluguelController</a>.  
+ <a href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_aluguel_controller.html#details">Mais...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos Públicos</h2></td></tr>
@@ -98,10 +101,15 @@ Métodos Públicos</h2></td></tr>
 <tr class="separator:a5a9c046af8de41f718963a02eaf972c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a748a0c34f2a19eeadbc86fa44925d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classapp_1_1config_1_1dto_1_1_aluguel_d_t_o.html">AluguelDTO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_aluguel_controller.html#a6a748a0c34f2a19eeadbc86fa44925d6">getAluguel</a> (@PathVariable int id)</td></tr>
 <tr class="separator:a6a748a0c34f2a19eeadbc86fa44925d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2679ff932b042a9016798eb0c4d26bbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_aluguel_controller.html#a2679ff932b042a9016798eb0c4d26bbc">setCorrida</a> (@Valid @RequestBody <a class="el" href="classapp_1_1domain_1_1entities_1_1_aluguel.html">Aluguel</a> aluguel)  throws SQLException </td></tr>
-<tr class="separator:a2679ff932b042a9016798eb0c4d26bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8699f32316a518ac426051b158e2b621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_aluguel_controller.html#a8699f32316a518ac426051b158e2b621">setAluguel</a> (@Valid @RequestBody <a class="el" href="classapp_1_1domain_1_1entities_1_1_aluguel.html">Aluguel</a> aluguel)  throws SQLException </td></tr>
+<tr class="separator:a8699f32316a518ac426051b158e2b621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Métodos</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>A classe <a class="el" href="classapp_1_1config_1_1rest_1_1v1_1_1controller_1_1_aluguel_controller.html" title="AluguelController.">AluguelController</a> intermedia o acesso do programa ao banco de dados, buscando um ou mais objetos alugueis, com base na estrutura de objeto definida em AluguelDTO.</p>
+<dl class="section author"><dt>Autor</dt><dd>Vinícius Lora, José Ricardo Bock</dd></dl>
+<dl class="section since"><dt>Desde</dt><dd>28/05/2020</dd></dl>
+<dl class="section date"><dt>Data</dt><dd>31/05/2020 </dd></dl>
+</div><h2 class="groupheader">Métodos</h2>
 <a id="a5a9c046af8de41f718963a02eaf972c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a9c046af8de41f718963a02eaf972c9">&#9670;&nbsp;</a></span>getAlugueis()</h2>
 
@@ -116,9 +124,10 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                          {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> aluguelService.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#aebf8ee1a1e05cfccda75a47b8d9acc5a">getAlugueis</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<p>Este método invoca a classe que trata direto com o banco (aluguelService) e retorna uma lista de objetos do tipo AluguelDTO que contém todos os registros de aluguéis contidos no banco de dados.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                          {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> aluguelService.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#aebf8ee1a1e05cfccda75a47b8d9acc5a">getAlugueis</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -137,21 +146,22 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                       {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> aluguelService.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#ac1f26a8181d53c4fb82ea522e65e0a9f">getAluguel</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<p>Este método invoca a classe que trata direto com o banco (aluguelService) e retorna um objeto do tipo AluguelDTO referente ao ID informado como parâmetro.</p>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                       {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> aluguelService.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#ac1f26a8181d53c4fb82ea522e65e0a9f">getAluguel</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2679ff932b042a9016798eb0c4d26bbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2679ff932b042a9016798eb0c4d26bbc">&#9670;&nbsp;</a></span>setCorrida()</h2>
+<a id="a8699f32316a518ac426051b158e2b621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8699f32316a518ac426051b158e2b621">&#9670;&nbsp;</a></span>setAluguel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void app.config.rest.v1.controller.AluguelController.setCorrida </td>
+          <td class="memname">void app.config.rest.v1.controller.AluguelController.setAluguel </td>
           <td>(</td>
           <td class="paramtype">@Valid @RequestBody <a class="el" href="classapp_1_1domain_1_1entities_1_1_aluguel.html">Aluguel</a>&#160;</td>
           <td class="paramname"><em>aluguel</em></td><td>)</td>
@@ -159,13 +169,15 @@ Métodos Públicos</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                                                    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            aluguelService.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#aa1f3f51778d9a0f52881675495508013">setAluguel</a>(aluguel);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }<span class="keywordflow">catch</span> (SQLException ex){</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">throw</span> ex;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<p>Este método recebe um objeto Aluguel, e utiliza a classe aluguelService para adicionar este objeto ao banco. <br  />
+ Caso não consiga, uma mensagem de erro é apresentada.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                                    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            aluguelService.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#aa1f3f51778d9a0f52881675495508013">setAluguel</a>(aluguel);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }<span class="keywordflow">catch</span> (SQLException ex){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">throw</span> ex;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
