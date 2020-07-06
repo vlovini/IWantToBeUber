@@ -11,5 +11,11 @@ var classapp_1_1domain_1_1views_1_1_detalhes_condutor =
     [ "setMediaValores", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#aee4a174661b495be62ef41938d047418", null ],
     [ "setNomeCondutor", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#a50ca5d3e941be3a7175f7b69e1067043", null ],
     [ "setQntAvaliacoes", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#ad547d0d19bbde6eecb3789f7be8ce236", null ],
-    [ "setQntCorridas", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#af7149611fbc059fc2e0918b1109b9def", null ]
+    [ "setQntCorridas", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#af7149611fbc059fc2e0918b1109b9def", null ],
+    [ "cpfCondutor", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#a38f67c8cc02d3ade3a89384761317081", null ],
+    [ "mediaAvaliacoes", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#affd972ab46cd38fc3449dcfdd25d6bea", null ],
+    [ "mediaValores", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#adb55529650b7941c4dd66dd1895d8d84", null ],
+    [ "nomeCondutor", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#af4fc711ad67d63541d1eb02571d4222c", null ],
+    [ "qntAvaliacoes", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#a0830033e019cd4ed6daef4b9566b682b", null ],
+    [ "qntCorridas", "classapp_1_1domain_1_1views_1_1_detalhes_condutor.html#a1ea219ddb89e3ec8be307dd7021d07cb", null ]
 ];

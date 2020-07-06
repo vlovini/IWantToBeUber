@@ -13,5 +13,12 @@ var classapp_1_1domain_1_1views_1_1_detalhes_veiculo =
     [ "setModelo", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a7a92d2150d6c785840c9a0fa3789117e", null ],
     [ "setPlaca", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#abac97ec520366fee349cc0b54b95ff10", null ],
     [ "setQntAvaliacoes", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a1d924079b960c7193a20a52e10654f01", null ],
-    [ "setRenavam", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#af971cc8f33dc8259dabe285bb3e1790f", null ]
+    [ "setRenavam", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#af971cc8f33dc8259dabe285bb3e1790f", null ],
+    [ "ano", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#aff3526b2aa9b03673ea4406fdc64b9ab", null ],
+    [ "marca", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a982ebd548c6d9b60d9ae27e835813e56", null ],
+    [ "mediaAvaliacoes", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a092f639a6bae7a4bd50e0a3240cf46b5", null ],
+    [ "modelo", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a667447e8864aa21a25b58f4e22a8a595", null ],
+    [ "placa", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a748312b829a2d7290d4ac896c1779da3", null ],
+    [ "qntAvaliacoes", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a658ef67219f7110ebca31ccb34f574c7", null ],
+    [ "renavam", "classapp_1_1domain_1_1views_1_1_detalhes_veiculo.html#a1464bc326cac23e7a85a90e1b11a0c8b", null ]
 ];

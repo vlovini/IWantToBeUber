@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('classapp_1_1service_1_1impl_1_1_alugue
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pri-methods">Membros Privados</a> &#124;
 <a href="classapp_1_1service_1_1impl_1_1_aluguel_service_impl-members.html">Lista de todos os Membros</a>  </div>
   <div class="headertitle">
 <div class="title">Referência da Classe app.service.impl.AluguelServiceImpl</div>  </div>
@@ -109,6 +110,11 @@ Métodos Públicos</h2></td></tr>
 <tr class="separator:a55bf0fe2d85e5ce0e4c5957e83f58985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b1ca1ca7aa1e986507b8620c7e2f61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_aluguel_service_impl.html#a09b1ca1ca7aa1e986507b8620c7e2f61">setAluguel</a> (<a class="el" href="classapp_1_1domain_1_1entities_1_1_aluguel.html">Aluguel</a> aluguel)  throws SQLException</td></tr>
 <tr class="separator:a09b1ca1ca7aa1e986507b8620c7e2f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Membros Privados</h2></td></tr>
+<tr class="memitem:a75fa8f2e3f6985b88cfd243390f8381e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classapp_1_1config_1_1dto_1_1_aluguel_d_t_o.html">AluguelDTO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_aluguel_service_impl.html#a75fa8f2e3f6985b88cfd243390f8381e">getAluguelDTOFromAluguel</a> (<a class="el" href="classapp_1_1domain_1_1entities_1_1_aluguel.html">Aluguel</a> a)</td></tr>
+<tr class="separator:a75fa8f2e3f6985b88cfd243390f8381e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Métodos</h2>
 <a id="a1f941bd382de054e83191667eb081bd3"></a>
@@ -131,7 +137,7 @@ Métodos Públicos</h2></td></tr>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        List&lt;AluguelDTO&gt; aluguelDTOS = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        List&lt;Aluguel&gt; aluguels = aluguelRepository.findAll();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">for</span> (Aluguel a: aluguels) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            aluguelDTOS.add(this.getAluguelDTOFromAluguel(a));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            aluguelDTOS.add(this.<a class="code" href="classapp_1_1service_1_1impl_1_1_aluguel_service_impl.html#a75fa8f2e3f6985b88cfd243390f8381e">getAluguelDTOFromAluguel</a>(a));</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> aluguelDTOS;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
@@ -156,8 +162,46 @@ Métodos Públicos</h2></td></tr>
 
 <p>Implementa <a class="el" href="interfaceapp_1_1service_1_1_aluguel_service.html#ac1f26a8181d53c4fb82ea522e65e0a9f">app.service.AluguelService</a>.</p>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                               {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> this.getAluguelDTOFromAluguel(aluguelRepository.getOne(idAluguel));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="classapp_1_1service_1_1impl_1_1_aluguel_service_impl.html#a75fa8f2e3f6985b88cfd243390f8381e">getAluguelDTOFromAluguel</a>(aluguelRepository.getOne(idAluguel));</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a75fa8f2e3f6985b88cfd243390f8381e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fa8f2e3f6985b88cfd243390f8381e">&#9670;&nbsp;</a></span>getAluguelDTOFromAluguel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classapp_1_1config_1_1dto_1_1_aluguel_d_t_o.html">AluguelDTO</a> app.service.impl.AluguelServiceImpl.getAluguelDTOFromAluguel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classapp_1_1domain_1_1entities_1_1_aluguel.html">Aluguel</a>&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                          {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        AluguelDTO aluguelDTO = <span class="keyword">new</span> AluguelDTO(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                a.getIdAluguel(),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                a.getDataInicio(),</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                a.getFkCPFCondutor(),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                a.getFkRenavam(),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                a.getDataFim()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        aluguelDTO.setNomeCondutor(dadosPessoaService.<a class="code" href="interfaceapp_1_1service_1_1_dados_pessoa_service.html#a95f3ca9a00fac7d66edc86935eeaf6c8">getCondutor</a>(a.getFkCPFCondutor()).<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#afc9aebf13289df645c751c1a44e9043a">getNome</a>());</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        aluguelDTO.setPlacaVeiculo(veiculosService.<a class="code" href="interfaceapp_1_1service_1_1_veiculos_service.html#a3bdd45c8fb7097a988bd0db5b2b0d127">getCarro</a>(a.getFkRenavam()).<a class="code" href="classapp_1_1config_1_1dto_1_1_veiculos_d_t_o.html#a3ba7d65da9ecda0089793d5959ed51f9">getPlaca</a>());</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> aluguelDTO;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -193,6 +237,11 @@ Métodos Públicos</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassapp_1_1config_1_1dto_1_1_veiculos_d_t_o_html_a3ba7d65da9ecda0089793d5959ed51f9"><div class="ttname"><a href="classapp_1_1config_1_1dto_1_1_veiculos_d_t_o.html#a3ba7d65da9ecda0089793d5959ed51f9">app.config.dto.VeiculosDTO.getPlaca</a></div><div class="ttdeci">String getPlaca()</div><div class="ttdef"><b>Definition:</b> VeiculosDTO.java:51</div></div>
+<div class="ttc" id="aclassapp_1_1service_1_1impl_1_1_aluguel_service_impl_html_a75fa8f2e3f6985b88cfd243390f8381e"><div class="ttname"><a href="classapp_1_1service_1_1impl_1_1_aluguel_service_impl.html#a75fa8f2e3f6985b88cfd243390f8381e">app.service.impl.AluguelServiceImpl.getAluguelDTOFromAluguel</a></div><div class="ttdeci">AluguelDTO getAluguelDTOFromAluguel(Aluguel a)</div><div class="ttdef"><b>Definition:</b> AluguelServiceImpl.java:44</div></div>
+<div class="ttc" id="ainterfaceapp_1_1service_1_1_dados_pessoa_service_html_a95f3ca9a00fac7d66edc86935eeaf6c8"><div class="ttname"><a href="interfaceapp_1_1service_1_1_dados_pessoa_service.html#a95f3ca9a00fac7d66edc86935eeaf6c8">app.service.DadosPessoaService.getCondutor</a></div><div class="ttdeci">Condutores getCondutor(String CPF)</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_afc9aebf13289df645c751c1a44e9043a"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#afc9aebf13289df645c751c1a44e9043a">app.domain.AbstractPessoa.getNome</a></div><div class="ttdeci">String getNome()</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:33</div></div>
+<div class="ttc" id="ainterfaceapp_1_1service_1_1_veiculos_service_html_a3bdd45c8fb7097a988bd0db5b2b0d127"><div class="ttname"><a href="interfaceapp_1_1service_1_1_veiculos_service.html#a3bdd45c8fb7097a988bd0db5b2b0d127">app.service.VeiculosService.getCarro</a></div><div class="ttdeci">VeiculosDTO getCarro(String Renavam)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
