@@ -94,18 +94,13 @@ Introdução</h1>
 O banco de dados é desenhado para representar a estrutura básica de um aplicativo de transporte, como o Uber. <br  />
 A regra de negócio desta empresa presume que a mesma é proprietária dos carros, e os disponibiliza mediante aluguel para que os motoristas efetuem corridas. <br  />
 As seguintes tabelas constam no banco: <br  />
-</p><ul>
-<li>Marcas <br  />
-</li>
-<li>Veículos <br  />
-</li>
-<li>Condutores <br  />
-</li>
-<li>Passageitos <br  />
-</li>
-<li>Alugeis <br  />
-</li>
-<li>Corridas <br  />
+<br  />
+<b>Marcas</b> <br  />
+<b>Veículos</b> <br  />
+<b>Condutores</b> <br  />
+<b>Passageitos</b> <br  />
+<b>Alugeis</b> <br  />
+<b>Corridas</b> <br  />
 <br  />
 A tabela Marcas lista os nomes das marcas de veículos cadastradas. <br  />
 A tabela Veículos lista os detalhes de cada veículo disponível na empresa, como placa, renavam, modelo e há um FK para marca do veículo. <br  />
@@ -113,8 +108,7 @@ A tabela Condutores lista as pessoas e seus respectivos dados, cadastradas na pl
 A tabela Passageiros lista as pessoas e seus respectivos dados cadastradas na plataforma como passageiros (clientes) da empresa. <br  />
 A tabela Alugueis lista os alugueis de veículos por parte dos condutores para efetuação das corridas. <br  />
 A tabela Corridas registra cada serviço prestado, onde são envolvidos um aluguel (que consta condutor e veículo) e um passageiro. <br  />
- </li>
-</ul>
+ </p>
 <h1><a class="anchor" id="flux_sec"></a>
 Fluxograma da Aplicação</h1>
 <p>A seguir está representado o fluxograma de alto nível da aplicação </p><div class="image">
@@ -125,14 +119,104 @@ Fluxograma</div></div>
 Cenários de Teste</h1>
 <p>Foram realizados três cenários de teste funcional da aplicação </p>
 <h2><a class="anchor" id="test1_sec1"></a>
-Cenário 1</h2>
-<p>Descrição do cenário de teste 1</p>
+Cenário 1  - Tabela Marcas</h2>
+<p>/veiculos/marcas <br  />
+Método HTTP: Post <br  />
+Dado que o usuário deva entrar com um dado nome de marca através do corpo de mensagem {“nome”: “NOME_MARCA”} <br  />
+Esperado: Resposta do servidor 200; <br  />
+Como validar: Acessar o banco, realizar Select e procurar por marca adicionada. <br  />
+<br  />
+/veiculos/marcas/{id} <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva entrar com o id de marca cadastrada no sistema através do parâmetro na URL; <br  />
+Esperado: Resposta do servidor 200; Objeto JSON do tipo marca; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela marca retornada. <br  />
+<br  />
+/veiculos/marcas <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva requisitar para a URL em questão; <br  />
+Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo marca; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela marca retornada. <br  />
+</p>
 <h2><a class="anchor" id="test1_sec2"></a>
-Cenário 2</h2>
-<p>Descrição do cenário de teste 2</p>
+Cenário 2 - Tabela Modelos</h2>
+<p>/veiculos/modelos <br  />
+Dado que o usuário deva entrar com um dado nome de marca através do corpo de mensagem {“fkMarca”: “id_marca”, "nome": “NOME_MARCA”} usando método HTTP Post. <br  />
+Esperado: Resposta do servidor 200; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pelo veículo adicionado. <br  />
+<br  />
+/veiculos/modelos/{id} <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva entrar com o id de modelos cadastrados no sistema através do parâmetro na URL; <br  />
+Esperado: Resposta do servidor 200; Objeto JSON do tipo modelo; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. <br  />
+<br  />
+/veiculos/modelos <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva requisitar para a URL em questão; <br  />
+Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo modelo; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. <br  />
+ </p>
 <h2><a class="anchor" id="test1_sec3"></a>
-Cenário 3</h2>
-<p>Descrição do cenário de teste 3</p>
+Cenário 3 - Tabela Corridas</h2>
+<p>/corridas <br  />
+Método HTTP: Post <br  />
+Dado que o usuário deva entrar com o seguinte corpo de request abaixo, o usuário irá cadastrar uma corrida feita no aplicativo. <br  />
+{ <br  />
+ "avaliacaoCondutor”:”5”, \n
+      "avaliacaoVeiculo”:”5”, <br  />
+ "dataInicio”:”2020-12-20’T’22:11:00.000Z”, \n
+      "dataFim":"2020-12-20’T’23:45:00.000Z", \n
+      "origem”:”São Leopoldo”, <br  />
+ "destino”:”Porto Alegre”, \n
+      "tarifa”:”1.5”, <br  />
+ "distancia”:”30.5”, \n
+      "fkAluguel”:”2”, <br  />
+ "fkCPFPassageiro”:”3” <br  />
+} <br  />
+Esperado: Resposta do servidor 201; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pelo corrida adicionado. <br  />
+Status: Sucesso <br  />
+ /corridas/{id} <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva entrar com o id de corridas cadastrados no sistema através do parâmetro na URL; <br  />
+Esperado: Resposta do servidor 200; Objeto JSON do tipo corridas; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. <br  />
+ /corridas <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva requisitar para a URL em questão; <br  />
+Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo corrida; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. <br  />
+ </p>
+<h2><a class="anchor" id="test1_sec4"></a>
+Cenário 4 - Tabela Passageiros</h2>
+<p>/Passageiros <br  />
+Método HTTP: Post <br  />
+Dado que o usuário deva entrar com o seguinte corpo de request abaixo, o usuário irá cadastrar um passageiro no aplicativo. <br  />
+{ <br  />
+ "nome": "TESTE CENÁRIO", <br  />
+ "telefone": "+559199999999", <br  />
+ "dataCadastro": "2020-01-01T00:00:00.000+0000", <br  />
+ "cpfPassageiro": "942.790.780-09" <br  />
+} <br  />
+<br  />
+Esperado: Resposta do servidor 200; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pelo passeio adicionado. <br  />
+Status: Sucesso <br  />
+ <br  />
+/Passageiros/{id} <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva entrar com o id de passageiros cadastrados no sistema através do parâmetro na URL; <br  />
+Esperado: Resposta do servidor 200; Objeto JSON do tipo corridas; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. <br  />
+ <br  />
+/Passageiros <br  />
+Método HTTP: Get <br  />
+Dado que o usuário deva requisitar para a URL em questão; <br  />
+Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo passageiro; <br  />
+Como validar: Acessar o banco, realizar Select e procurar pelo passageiros retornados. <br  />
+ <br  />
+</p>
 <h1><a class="anchor" id="consfinais_sec"></a>
 Considerações Finais</h1>
 <p>A aplicação cumpre os requisitos funcionais propostos e foi desenvolvida seguindo regras de boas práticas de programação. </p>

@@ -29,9 +29,10 @@ var NAVTREE =
       [ "Introdução", "index.html#intro_sec", null ],
       [ "Fluxograma da Aplicação", "index.html#flux_sec", null ],
       [ "Cenários de Teste", "index.html#centest_sec", [
-        [ "Cenário 1", "index.html#test1_sec1", null ],
-        [ "Cenário 2", "index.html#test1_sec2", null ],
-        [ "Cenário 3", "index.html#test1_sec3", null ]
+        [ "Cenário 1  - Tabela Marcas", "index.html#test1_sec1", null ],
+        [ "Cenário 2 - Tabela Modelos", "index.html#test1_sec2", null ],
+        [ "Cenário 3 - Tabela Corridas", "index.html#test1_sec3", null ],
+        [ "Cenário 4 - Tabela Passageiros", "index.html#test1_sec4", null ]
       ] ],
       [ "Considerações Finais", "index.html#consfinais_sec", null ]
     ] ],

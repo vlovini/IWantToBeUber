@@ -6,13 +6,13 @@
  * O banco de dados é desenhado para representar a estrutura básica de um aplicativo de transporte, como o Uber. \n
  * A regra de negócio desta empresa presume que a mesma é proprietária dos carros, e os disponibiliza mediante aluguel para que os motoristas efetuem corridas. \n
  * As seguintes tabelas constam no banco: \n
- *
- * - Marcas \n
- * - Veículos \n
- * - Condutores \n
- * - Passageitos \n
- * - Alugeis \n
- * - Corridas \n
+ * \n
+ * \b Marcas \n
+ * \b Veículos \n
+ * \b Condutores \n
+ * \b Passageitos \n
+ * \b Alugeis \n
+ * \b Corridas \n
  * \n
  * A tabela Marcas lista os nomes das marcas de veículos cadastradas. \n
  * A tabela Veículos lista os detalhes de cada veículo disponível na empresa, como placa, renavam, modelo e há um FK para marca do veículo. \n
@@ -28,18 +28,106 @@
  *
  * \section centest_sec Cenários de Teste
  * Foram realizados três cenários de teste funcional da aplicação
- * \subsection test1_sec1 Cenário 1
+ * \subsection test1_sec1 Cenário 1  - Tabela Marcas
  *  
- * Descrição do cenário de teste 1
+ * /veiculos/marcas \n
+ * Método HTTP: Post \n
+ * Dado que o usuário deva entrar com um dado nome de marca através do corpo de mensagem {“nome”: “NOME_MARCA”} \n
+ * Esperado: Resposta do servidor 200; \n
+ * Como validar: Acessar o banco, realizar Select e procurar por marca adicionada. \n
+ * \n
+ * /veiculos/marcas/{id} \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva entrar com o id de marca cadastrada no sistema através do parâmetro na URL; \n
+ * Esperado: Resposta do servidor 200; Objeto JSON do tipo marca; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela marca retornada. \n
+ * \n
+ * /veiculos/marcas \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva requisitar para a URL em questão; \n
+ * Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo marca; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela marca retornada. \n
+ * 
  *
- * \subsection test1_sec2 Cenário 2
+ * \subsection test1_sec2 Cenário 2 - Tabela Modelos
  *
- * Descrição do cenário de teste 2
- *
- * \subsection test1_sec3 Cenário 3
- *
- * Descrição do cenário de teste 3
- *
+ * /veiculos/modelos \n
+ * Dado que o usuário deva entrar com um dado nome de marca através do corpo de mensagem {“fkMarca”: “id_marca”, "nome": “NOME_MARCA”} usando método HTTP Post. \n
+ * Esperado: Resposta do servidor 200; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pelo veículo adicionado. \n
+ * \n
+ * /veiculos/modelos/{id} \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva entrar com o id de modelos cadastrados no sistema através do parâmetro na URL; \n
+ * Esperado: Resposta do servidor 200; Objeto JSON do tipo modelo; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. \n
+ * \n
+ * /veiculos/modelos \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva requisitar para a URL em questão; \n
+ * Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo modelo; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. \n
+ * 
+ * \subsection test1_sec3 Cenário 3 - Tabela Corridas
+ * 
+ * /corridas \n
+ * Método HTTP: Post \n
+ * Dado que o usuário deva entrar com o seguinte corpo de request abaixo, o usuário irá cadastrar uma corrida feita no aplicativo. \n
+ * { \n
+ * 	  "avaliacaoCondutor”:”5”, \n
+ * 	  "avaliacaoVeiculo”:”5”, \n
+ * 	  "dataInicio”:”2020-12-20’T’22:11:00.000Z”, \n
+ * 	  "dataFim":"2020-12-20’T’23:45:00.000Z", \n
+ * 	  "origem”:”São Leopoldo”, \n
+ * 	  "destino”:”Porto Alegre”, \n
+ * 	  "tarifa”:”1.5”, \n
+ * 	  "distancia”:”30.5”, \n
+ * 	  "fkAluguel”:”2”, \n
+ * 	  "fkCPFPassageiro”:”3” \n
+ * } \n
+ * Esperado: Resposta do servidor 201; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pelo corrida adicionado. \n
+ * Status: Sucesso \n
+ * 
+ * /corridas/{id} \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva entrar com o id de corridas cadastrados no sistema através do parâmetro na URL; \n
+ * Esperado: Resposta do servidor 200; Objeto JSON do tipo corridas; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. \n
+ * 
+ * /corridas \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva requisitar para a URL em questão; \n
+ * Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo corrida; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. \n
+ * 
+ * \subsection test1_sec4 Cenário 4 - Tabela Passageiros 
+ * /Passageiros \n
+ * Método HTTP: Post \n
+ * Dado que o usuário deva entrar com o seguinte corpo de request abaixo, o usuário irá cadastrar um passageiro no aplicativo. \n
+ * { \n
+ *     "nome": "TESTE CENÁRIO", \n
+ *     "telefone": "+559199999999", \n
+ *     "dataCadastro": "2020-01-01T00:00:00.000+0000", \n
+ *    "cpfPassageiro": "942.790.780-09" \n
+ * } \n
+ * \n
+ * Esperado: Resposta do servidor 200; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pelo passeio adicionado. \n
+ * Status: Sucesso \n
+ *  \n
+ * /Passageiros/{id} \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva entrar com o id de passageiros cadastrados no sistema através do parâmetro na URL; \n
+ * Esperado: Resposta do servidor 200; Objeto JSON do tipo corridas; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pela modelo retornada. \n
+ *  \n
+ * /Passageiros \n
+ * Método HTTP: Get \n
+ * Dado que o usuário deva requisitar para a URL em questão; \n
+ * Esperado: Resposta do servidor 200; Lista de objetos JSON do tipo passageiro; \n
+ * Como validar: Acessar o banco, realizar Select e procurar pelo passageiros retornados. \n
+ *  \n
  * \section consfinais_sec Considerações Finais
  *
  * A aplicação cumpre os requisitos funcionais propostos e foi desenvolvida seguindo regras de boas práticas de programação.
