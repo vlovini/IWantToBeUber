@@ -12,6 +12,12 @@ import javax.persistence.Table;
 //@ReadOnly
 @Entity(name = "DetalhesCorrida")
 @Table(name = "DETALHES_CORRIDA")
+
+/*! \brief VIEWS - DetalhesVeiculo */
+/*! \details Implementação da View que traz os detalhes da corrida.*/
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
 public class DetalhesCorrida {
 
     @Id

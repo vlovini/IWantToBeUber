@@ -45,35 +45,38 @@ public class VeiculosController {
 
     @GetMapping("/marcas")
     public List<Marcas> getMarcas(){
+/// Utiliza a interface marcasRepository, que é uma extensão de JpaRepository, para obter a lista completa de objetos 'Marcas' contidos no banco de dados.
         return marcasRepository.findAll();
     }
 
     @GetMapping("/marcas/{id}")
     public Marcas getMarca(@PathVariable int id){
+/// Utiliza a interface marcasRepository, que é uma extensão de JpaRepository, para obter um único objeto do tipo 'Marcas' contido no banco de dados, com base no ID informado como parametro.
         return marcasRepository.getOne(id);
     }
 
     @PostMapping("/marcas")
     public void setMarca(@Valid @RequestBody Marcas marca){
+/// Utiliza a interface marcasRepository, que é uma extensão de JpaRepository, para gravar um objeto do tipo 'Marcas' no banco de dados, com base no objeto passado como parametro.
         marcasRepository.save(marca);
     }
 
 
     @GetMapping("/modelos")
     public List<Modelos> getModelos(){
+/// Utiliza a interface modelosRepository, que é uma extensão de JpaRepository, para obter a lista completa de objetos 'Modelos' contidos no banco de dados.
         return modelosRepository.findAll();
     }
 
     @GetMapping("/modelos/{id}")
     public Modelos getModelo(@PathVariable int id){
+/// Utiliza a interface modelosRepository, que é uma extensão de JpaRepository, para obter um único objeto do tipo 'Modelos' contido no banco de dados, com base no ID informado como parametro.
         return modelosRepository.getOne(id);
     }
 
     @PostMapping("/modelos")
     public void setModelo(@Valid @RequestBody Modelos modelo){
+/// Utiliza a interface marcasRepository, que é uma extensão de JpaRepository, para gravar um objeto do tipo 'Modelos' no banco de dados, com base no objeto passado como parametro.
         modelosRepository.save(modelo);
     }
-
-
-
 }

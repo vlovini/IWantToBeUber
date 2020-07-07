@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('classapp_1_1domain_1_1entities_1_1_vei
 <div class="title">Referência da Classe app.domain.entities.Veiculos</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementação da Classe <a class="el" href="classapp_1_1domain_1_1entities_1_1_veiculos.html" title="Implementação da Classe Veiculos, com base na tabela homônima constante no Banco de Dados.">Veiculos</a>, com base na tabela homônima constante no Banco de Dados.  
+ <a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#details">Mais...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos Públicos</h2></td></tr>
@@ -115,15 +118,23 @@ Métodos Públicos</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atributos Privados</h2></td></tr>
 <tr class="memitem:aa4735e91663d5be1d901ab83f9f024f7"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a></td></tr>
+<tr class="memdesc:aa4735e91663d5be1d901ab83f9f024f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo String que contém o Renavam do veículo, sendo sua Primary Key.  <a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">Mais...</a><br /></td></tr>
 <tr class="separator:aa4735e91663d5be1d901ab83f9f024f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a796dc750c339e379602feb647ff618a4"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a></td></tr>
+<tr class="memdesc:a796dc750c339e379602feb647ff618a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo String que contém a placa do veículo.  <a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">Mais...</a><br /></td></tr>
 <tr class="separator:a796dc750c339e379602feb647ff618a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a688143d38ddcb0a6d3354e1622b568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a></td></tr>
+<tr class="memdesc:a3a688143d38ddcb0a6d3354e1622b568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo int que contém a Foreign Key para vincular o veículo a um modelo de carro.  <a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">Mais...</a><br /></td></tr>
 <tr class="separator:a3a688143d38ddcb0a6d3354e1622b568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03bd3e085efcb5188d418c5b63062332"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a></td></tr>
+<tr class="memdesc:a03bd3e085efcb5188d418c5b63062332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atributo String para registrar o ano de fabricação do veículo.  <a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">Mais...</a><br /></td></tr>
 <tr class="separator:a03bd3e085efcb5188d418c5b63062332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Métodos</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Projeção JPA do conjunto de entidades "Veiculos" no Banco de dados. /* /*! </p><dl class="section author"><dt>Autor</dt><dd>Vinícius Lora, José Ricardo Bock</dd></dl>
+<dl class="section since"><dt>Desde</dt><dd>28/05/2020</dd></dl>
+<dl class="section date"><dt>Data</dt><dd>31/05/2020 </dd></dl>
+</div><h2 class="groupheader">Métodos</h2>
 <a id="a19bc67169d9bcd96136928ffdee525b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19bc67169d9bcd96136928ffdee525b8">&#9670;&nbsp;</a></span>getAno()</h2>
 
@@ -138,9 +149,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                           {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<p>Método para obter a String com o ano de fabricação do veículo.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                           {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -158,9 +170,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                             {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<p>Método para obter a Foreign Key que vincula o Veículo a um modelo de carro.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                             {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -178,9 +191,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                             {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<p>Método para obter a String com a placa do veículo.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                             {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,9 +212,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                               {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<p>Método para obter o Renavam do veículo, que é sua Primary Key.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                               {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -219,9 +234,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                   {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<p>Método para definir a String com o ano de fabricação do veículo, com base no parametro informado.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                   {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">ano</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,9 +256,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                          {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<p>Método para definir a Foreign Key que vincula o Veículo a um modelo de carro, utilizando um inteiro passado como parametro.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                          {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">fkModelo</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -261,9 +278,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                       {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<p>Método para definir a placa do veículo, com base na String informada como parametro.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                       {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">placa</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -282,9 +300,10 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                           {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<p>Método para definir o Renavam do veículo, que é sua Primary Key.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                           {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a> = <a class="code" href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">renavam</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -382,10 +401,10 @@ Atributos Privados</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_a3a688143d38ddcb0a6d3354e1622b568"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">app.domain.entities.Veiculos.fkModelo</a></div><div class="ttdeci">int fkModelo</div><div class="ttdef"><b>Definition:</b> Veiculos.java:29</div></div>
-<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_aa4735e91663d5be1d901ab83f9f024f7"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">app.domain.entities.Veiculos.renavam</a></div><div class="ttdeci">String renavam</div><div class="ttdef"><b>Definition:</b> Veiculos.java:18</div></div>
-<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_a796dc750c339e379602feb647ff618a4"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">app.domain.entities.Veiculos.placa</a></div><div class="ttdeci">String placa</div><div class="ttdef"><b>Definition:</b> Veiculos.java:23</div></div>
-<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_a03bd3e085efcb5188d418c5b63062332"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">app.domain.entities.Veiculos.ano</a></div><div class="ttdeci">String ano</div><div class="ttdef"><b>Definition:</b> Veiculos.java:34</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_a3a688143d38ddcb0a6d3354e1622b568"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a3a688143d38ddcb0a6d3354e1622b568">app.domain.entities.Veiculos.fkModelo</a></div><div class="ttdeci">int fkModelo</div><div class="ttdoc">Atributo int que contém a Foreign Key para vincular o veículo a um modelo de carro.</div><div class="ttdef"><b>Definition:</b> Veiculos.java:42</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_aa4735e91663d5be1d901ab83f9f024f7"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#aa4735e91663d5be1d901ab83f9f024f7">app.domain.entities.Veiculos.renavam</a></div><div class="ttdeci">String renavam</div><div class="ttdoc">Atributo String que contém o Renavam do veículo, sendo sua Primary Key.</div><div class="ttdef"><b>Definition:</b> Veiculos.java:27</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_a796dc750c339e379602feb647ff618a4"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a796dc750c339e379602feb647ff618a4">app.domain.entities.Veiculos.placa</a></div><div class="ttdeci">String placa</div><div class="ttdoc">Atributo String que contém a placa do veículo.</div><div class="ttdef"><b>Definition:</b> Veiculos.java:34</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1entities_1_1_veiculos_html_a03bd3e085efcb5188d418c5b63062332"><div class="ttname"><a href="classapp_1_1domain_1_1entities_1_1_veiculos.html#a03bd3e085efcb5188d418c5b63062332">app.domain.entities.Veiculos.ano</a></div><div class="ttdeci">String ano</div><div class="ttdoc">Atributo String para registrar o ano de fabricação do veículo.</div><div class="ttdef"><b>Definition:</b> Veiculos.java:49</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

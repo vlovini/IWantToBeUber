@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classapp_1_1domain_1_1_abstract_pessoa
 </div><!--header-->
 <div class="contents">
 
-<p>Classe pai com estrutura de atributos base de dados referentes a pessoas.  
+<p>Classe <a class="el" href="classapp_1_1domain_1_1_abstract_pessoa.html" title="Classe AbstractPessoa.">AbstractPessoa</a>.  
  <a href="classapp_1_1domain_1_1_abstract_pessoa.html#details">Mais...</a></p>
 <div class="dynheader">
 Diagrama de hierarquia para app.domain.AbstractPessoa:</div>
@@ -101,8 +101,8 @@ Diagrama de hierarquia para app.domain.AbstractPessoa:</div>
  <div class="center">
   <img src="classapp_1_1domain_1_1_abstract_pessoa.png" usemap="#app.domain.AbstractPessoa_map" alt=""/>
   <map id="app.domain.AbstractPessoa_map" name="app.domain.AbstractPessoa_map">
-<area href="classapp_1_1domain_1_1entities_1_1_condutores.html" title="Projeção JPA do conjunto de entidades &quot;Condutores&quot; no Banco de dados - Herda atributos básicos da cla..." alt="app.domain.entities.Condutores" shape="rect" coords="0,56,193,80"/>
-<area href="classapp_1_1domain_1_1entities_1_1_passageiros.html" alt="app.domain.entities.Passageiros" shape="rect" coords="203,56,396,80"/>
+<area href="classapp_1_1domain_1_1entities_1_1_condutores.html" title="Implementação da Classe Condutores, com base na tabela homônima constante no Banco de Dados." alt="app.domain.entities.Condutores" shape="rect" coords="0,56,193,80"/>
+<area href="classapp_1_1domain_1_1entities_1_1_passageiros.html" title="Implementação da Classe Passageiros, com base na tabela homônima constante no Banco de Dados." alt="app.domain.entities.Passageiros" shape="rect" coords="203,56,396,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,14 +124,18 @@ Métodos Públicos</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atributos Privados</h2></td></tr>
 <tr class="memitem:aac770e92663305103dc18d328b6850a6"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a></td></tr>
+<tr class="memdesc:aac770e92663305103dc18d328b6850a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIVISORIA.  <a href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">Mais...</a><br /></td></tr>
 <tr class="separator:aac770e92663305103dc18d328b6850a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc02f1b679c201f4f35a60a0d1af58b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a></td></tr>
+<tr class="memdesc:a1bc02f1b679c201f4f35a60a0d1af58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIVISORIA.  <a href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">Mais...</a><br /></td></tr>
 <tr class="separator:a1bc02f1b679c201f4f35a60a0d1af58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0252de3d3cd855fdb8e05316a998884c"><td class="memItemLeft" align="right" valign="top">Date&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a></td></tr>
+<tr class="memdesc:a0252de3d3cd855fdb8e05316a998884c"><td class="mdescLeft">&#160;</td><td class="mdescRight">DIVISORIA.  <a href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">Mais...</a><br /></td></tr>
 <tr class="separator:a0252de3d3cd855fdb8e05316a998884c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Vinícius Lora, José Ricardo Bock</dd></dl>
+<div class="textblock"><p>Classe pai com estrutura de atributos base de dados referentes a pessoas, sendo aproveitada para Condutores e Passageiros</p>
+<dl class="section author"><dt>Autor</dt><dd>Vinícius Lora, José Ricardo Bock</dd></dl>
 <dl class="section since"><dt>Desde</dt><dd>28/05/2020</dd></dl>
 <dl class="section date"><dt>Data</dt><dd>31/05/2020 </dd></dl>
 </div><h2 class="groupheader">Métodos</h2>
@@ -149,9 +153,11 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                  {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<p>Método retorna um objeto DataCadastro do tipo Date. <br  />
+ </p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                  {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -169,9 +175,11 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                            {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<p>Método retorna um objeto nome do tipo String. <br  />
+ </p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -189,9 +197,11 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<p>Método retorna um objeto telefone do tipo String. <br  />
+ </p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,9 +220,11 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                   {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a> = <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<p>Método atribui ao objeto criado as propriedades de um objeto Date 'dataCadastro' passado como parametro. <br  />
+ </p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                   {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a> = <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">dataCadastro</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,9 +243,11 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                     {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a> = <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<p>Método atribui ao objeto criado as propriedades de um objeto string 'nome' passado como parametro. <br  />
+ </p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                     {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a> = <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">nome</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,9 +266,11 @@ Atributos Privados</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                             {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a> = <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<p>Método atribui ao objeto criado as propriedades de um objeto string 'telefone' passado como parametro. <br  />
+ </p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                             {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        this.<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a> = <a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">telefone</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -278,6 +294,7 @@ Atributos Privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Atributo privado do tipo Date. </p>
 
 </div>
 </div>
@@ -300,6 +317,7 @@ Atributos Privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Atributo privado do tipo String. </p>
 
 </div>
 </div>
@@ -322,6 +340,7 @@ Atributos Privados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Atributo privado do tipo String. </p>
 
 </div>
 </div>
@@ -330,9 +349,9 @@ Atributos Privados</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_a0252de3d3cd855fdb8e05316a998884c"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">app.domain.AbstractPessoa.dataCadastro</a></div><div class="ttdeci">Date dataCadastro</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:31</div></div>
-<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_a1bc02f1b679c201f4f35a60a0d1af58b"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">app.domain.AbstractPessoa.telefone</a></div><div class="ttdeci">String telefone</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:26</div></div>
-<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_aac770e92663305103dc18d328b6850a6"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">app.domain.AbstractPessoa.nome</a></div><div class="ttdeci">String nome</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:21</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_a0252de3d3cd855fdb8e05316a998884c"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#a0252de3d3cd855fdb8e05316a998884c">app.domain.AbstractPessoa.dataCadastro</a></div><div class="ttdeci">Date dataCadastro</div><div class="ttdoc">DIVISORIA.</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:37</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_a1bc02f1b679c201f4f35a60a0d1af58b"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#a1bc02f1b679c201f4f35a60a0d1af58b">app.domain.AbstractPessoa.telefone</a></div><div class="ttdeci">String telefone</div><div class="ttdoc">DIVISORIA.</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:30</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_aac770e92663305103dc18d328b6850a6"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#aac770e92663305103dc18d328b6850a6">app.domain.AbstractPessoa.nome</a></div><div class="ttdeci">String nome</div><div class="ttdoc">DIVISORIA.</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:23</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

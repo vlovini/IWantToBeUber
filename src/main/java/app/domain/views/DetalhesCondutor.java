@@ -9,6 +9,12 @@ import javax.persistence.Table;
 
 @Entity(name = "DetalhesCondutor")
 @Table(name = "DETALHES_CONDUTOR")
+
+/*! \brief VIEWS - DetalhesCondutor */
+/*! \details Implementação da View que traz o relatório de informações dos condutores.*/
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
 public class DetalhesCondutor {
 
     @Id

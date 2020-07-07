@@ -6,12 +6,17 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 //import org.eclipse.persistence.annotations.ReadOnly;
 
 //@ReadOnly
 @Entity(name = "DetalhesVeiculo")
 @Table(name = "DETALHES_VEICULO")
+
+/*! \brief VIEWS - DetalhesVeiculo */
+/*! \details Implementação da View que traz os detalhes do veículo.*/
+/*! \author Vinícius Lora, José Ricardo Bock */
+/*! \since  28/05/2020 */
+/*! \date  31/05/2020 */
 public class DetalhesVeiculo {
 
     @Id
