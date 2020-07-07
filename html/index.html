@@ -90,10 +90,34 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
 Introdução</h1>
-<p>This is the introduction.</p>
+<p>Esta é uma aplicação Java SpringBoot como API de interface web para conexão junto a um banco de dados, possibilitando as opções de select, update, delete e insert. <br  />
+O banco de dados é desenhado para representar a estrutura básica de um aplicativo de transporte, como o Uber. <br  />
+A regra de negócio desta empresa presume que a mesma é proprietária dos carros, e os disponibiliza mediante aluguel para que os motoristas efetuem corridas. <br  />
+As seguintes tabelas constam no banco: <br  />
+</p><ul>
+<li>Marcas <br  />
+</li>
+<li>Veículos <br  />
+</li>
+<li>Condutores <br  />
+</li>
+<li>Passageitos <br  />
+</li>
+<li>Alugeis <br  />
+</li>
+<li>Corridas <br  />
+<br  />
+A tabela Marcas lista os nomes das marcas de veículos cadastradas. <br  />
+A tabela Veículos lista os detalhes de cada veículo disponível na empresa, como placa, renavam, modelo e há um FK para marca do veículo. <br  />
+A tabela Condutores lista as pessoas e seus respectivos dados, cadastradas na plataforma como condutores de veículos da empresa. <br  />
+A tabela Passageiros lista as pessoas e seus respectivos dados cadastradas na plataforma como passageiros (clientes) da empresa. <br  />
+A tabela Alugueis lista os alugueis de veículos por parte dos condutores para efetuação das corridas. <br  />
+A tabela Corridas registra cada serviço prestado, onde são envolvidos um aluguel (que consta condutor e veículo) e um passageiro. <br  />
+ </li>
+</ul>
 <h1><a class="anchor" id="flux_sec"></a>
 Fluxograma da Aplicação</h1>
-<p>Eis aqui o fluxograma da aplicação </p><div class="image">
+<p>A seguir está representado o fluxograma de alto nível da aplicação </p><div class="image">
 <img src="fluxograma.JPG" alt=""/>
 <div class="caption">
 Fluxograma</div></div>
@@ -111,7 +135,7 @@ Cenário 3</h2>
 <p>Descrição do cenário de teste 3</p>
 <h1><a class="anchor" id="consfinais_sec"></a>
 Considerações Finais</h1>
-<p>Nada a considerar </p>
+<p>A aplicação cumpre os requisitos funcionais propostos e foi desenvolvida seguindo regras de boas práticas de programação. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
