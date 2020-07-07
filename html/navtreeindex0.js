@@ -25,6 +25,8 @@ var NAVTREEINDEX0 =
 "_detalhes_veiculo_8java.html":[3,0,0,0,0,0,1,1,2],
 "_detalhes_veiculo_view_repository_8java.html":[3,0,0,0,0,0,2,5],
 "_eclipse_link_jpa_configuration_8java.html":[3,0,0,0,0,0,0,2],
+"_g_b___trabalho_final___parte1___dados___s_q_l.html":[3,0,0,0,1,0],
+"_g_b___trabalho_final___parte1___s_q_l.html":[3,0,0,0,1,1],
 "_main_application_8java.html":[3,0,0,0,0,0,4],
 "_marcas_8java.html":[3,0,0,0,0,0,1,0,3],
 "_marcas_repository_8java.html":[3,0,0,0,0,0,2,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classapp_1_1domain_1_1entities_1_1_modelos.html#ad3eb7f1ac1122a0f6a917c433bd93bae":[2,0,0,1,0,4,1],
 "classapp_1_1domain_1_1entities_1_1_modelos.html#adbc36c94d7f6c3f2aa38f6291b9d7746":[2,0,0,1,0,4,6],
 "classapp_1_1domain_1_1entities_1_1_modelos.html#ae04f6b96c5423480c557d1424f043074":[2,0,0,1,0,4,5],
-"classapp_1_1domain_1_1entities_1_1_passageiros.html":[2,0,0,1,0,5],
-"classapp_1_1domain_1_1entities_1_1_passageiros.html#a274d2facaf31fb281e6b95dfa5ff81d7":[2,0,0,1,0,5,0],
-"classapp_1_1domain_1_1entities_1_1_passageiros.html#a5e0ab76bd13cd21cbc4067c0bba51661":[2,0,0,1,0,5,1]
+"classapp_1_1domain_1_1entities_1_1_passageiros.html":[2,0,0,1,0,5]
 };
