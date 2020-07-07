@@ -6,7 +6,6 @@ import app.repository.AluguelRepository;
 import app.service.AluguelService;
 import app.service.DadosPessoaService;
 import app.service.VeiculosService;
-import org.hibernate.exception.GenericJDBCException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

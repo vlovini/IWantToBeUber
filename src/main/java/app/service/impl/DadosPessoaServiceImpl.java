@@ -5,6 +5,8 @@ import app.domain.entities.Passageiros;
 import app.repository.CondutoresRepository;
 import app.repository.PassageirosRepository;
 import app.service.DadosPessoaService;
+import br.com.caelum.stella.validation.CPFValidator;
+import org.hibernate.exception.GenericJDBCException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,6 +20,8 @@ public class DadosPessoaServiceImpl implements DadosPessoaService {
 
     @Autowired
     PassageirosRepository passageirosRepository;
+
+    CPFValidator cpfValidator = new CPFValidator();
 
     @Override
     public List<Passageiros> getPassageiros(){
@@ -35,18 +39,27 @@ public class DadosPessoaServiceImpl implements DadosPessoaService {
     }
 
     @Override
-    public Condutores getCondutor(String CPF){
-        return condutoresRepository.getOne(CPF);
+    public Condutores getCondutor(String CPF){ return condutoresRepository.getOne(CPF);
     }
 
     @Override
     public void setPassageiro(Passageiros passageiro){
-        passageirosRepository.save(passageiro);
+        try {
+            cpfValidator.assertValid(passageiro.getCpfPassageiro());
+            passageirosRepository.save(passageiro);
+        }catch (GenericJDBCException ex){
+            throw ex;
+        }
     }
 
     @Override
     public void setCondutor(Condutores condutores){
-        condutoresRepository.save(condutores);
+        try {
+            cpfValidator.assertValid(condutores.getCpfCondutor());
+            condutoresRepository.save(condutores);
+        }catch (GenericJDBCException ex){
+            throw ex;
+        }
     }
 
 }
