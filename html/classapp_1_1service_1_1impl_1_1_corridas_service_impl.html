@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>IWantToBeUber: Referência da Classe app.service.impl.CorridasServiceImpl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">IWantToBeUber
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">A simple Java SpringBoot REST App for an Uber like CRUD application</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classapp_1_1service_1_1impl_1_1_corridas_service_impl.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="#pac-attribs">Atributos do Pacote</a> &#124;
+<a href="#pri-methods">Membros Privados</a> &#124;
+<a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe app.service.impl.CorridasServiceImpl</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação/Componente - Implementação do serviço dedicado a lógica de negócio no cadastro e obtenção de corridas no sistema.  
+ <a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#details">Mais...</a></p>
+<div class="dynheader">
+Diagrama de hierarquia para app.service.impl.CorridasServiceImpl:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classapp_1_1service_1_1impl_1_1_corridas_service_impl.png" usemap="#app.service.impl.CorridasServiceImpl_map" alt=""/>
+  <map id="app.service.impl.CorridasServiceImpl_map" name="app.service.impl.CorridasServiceImpl_map">
+<area href="interfaceapp_1_1service_1_1_corridas_service.html" title="Interface - Serviço dedicado a lógica de negócio no cadastro e obtenção de corridas no sistema." alt="app.service.CorridasService" shape="rect" coords="0,0,224,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a9902d98cc55507816c58adde4c6cd6a7"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classapp_1_1config_1_1dto_1_1_corridas_d_t_o.html">CorridasDTO</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a9902d98cc55507816c58adde4c6cd6a7">getCorridas</a> ()</td></tr>
+<tr class="memdesc:a9902d98cc55507816c58adde4c6cd6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get de todas as corridas disponíveis no sistema.  <a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a9902d98cc55507816c58adde4c6cd6a7">Mais...</a><br /></td></tr>
+<tr class="separator:a9902d98cc55507816c58adde4c6cd6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8aeaa06f3ae47d27cfd6793735390d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classapp_1_1config_1_1dto_1_1_corridas_d_t_o.html">CorridasDTO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aa8aeaa06f3ae47d27cfd6793735390d5">getCorrida</a> (int idCorrida)</td></tr>
+<tr class="memdesc:aa8aeaa06f3ae47d27cfd6793735390d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get de uma dada corrida se disponível no sistema.  <a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aa8aeaa06f3ae47d27cfd6793735390d5">Mais...</a><br /></td></tr>
+<tr class="separator:aa8aeaa06f3ae47d27cfd6793735390d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52424ba7d2bc5d5eb66cfd6e8a8cd71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aa52424ba7d2bc5d5eb66cfd6e8a8cd71">setCorrida</a> (<a class="el" href="classapp_1_1domain_1_1entities_1_1_corridas.html">Corridas</a> corrida)  throws GenericJDBCException</td></tr>
+<tr class="memdesc:aa52424ba7d2bc5d5eb66cfd6e8a8cd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set de uma dada corrida se disponível no sistema.  <a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aa52424ba7d2bc5d5eb66cfd6e8a8cd71">Mais...</a><br /></td></tr>
+<tr class="separator:aa52424ba7d2bc5d5eb66cfd6e8a8cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Atributos do Pacote</h2></td></tr>
+<tr class="memitem:a29aad1430e5469736e5dc0e3c24efc2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceapp_1_1service_1_1_aluguel_service.html">AluguelService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a29aad1430e5469736e5dc0e3c24efc2e">aluguelService</a></td></tr>
+<tr class="separator:a29aad1430e5469736e5dc0e3c24efc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7937b3fe9db1da091abea6a18219b097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceapp_1_1service_1_1_dados_pessoa_service.html">DadosPessoaService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a7937b3fe9db1da091abea6a18219b097">dadosPessoaService</a></td></tr>
+<tr class="separator:a7937b3fe9db1da091abea6a18219b097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af929dd552ee68f2ca11f429344afd911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfaceapp_1_1repository_1_1_corridas_repository.html">CorridasRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#af929dd552ee68f2ca11f429344afd911">corridasRepository</a></td></tr>
+<tr class="separator:af929dd552ee68f2ca11f429344afd911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Membros Privados</h2></td></tr>
+<tr class="memitem:aec999ec35bf2cd4300d815e4ccc4818e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classapp_1_1config_1_1dto_1_1_corridas_d_t_o.html">CorridasDTO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aec999ec35bf2cd4300d815e4ccc4818e">getCorridaDTOFromCorrida</a> (<a class="el" href="classapp_1_1domain_1_1entities_1_1_corridas.html">Corridas</a> c)</td></tr>
+<tr class="memdesc:aec999ec35bf2cd4300d815e4ccc4818e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Para uma dada corrida, cria um objeto CorridaDTO.  <a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aec999ec35bf2cd4300d815e4ccc4818e">Mais...</a><br /></td></tr>
+<tr class="separator:aec999ec35bf2cd4300d815e4ccc4818e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação/Componente - Implementação do serviço dedicado a lógica de negócio no cadastro e obtenção de corridas no sistema. </p>
+<dl class="section author"><dt>Autor</dt><dd>Vinícius Lora, José Ricardo Bock</dd></dl>
+<dl class="section since"><dt>Desde</dt><dd>28/05/2020</dd></dl>
+<dl class="section date"><dt>Data</dt><dd>31/05/2020 </dd></dl>
+</div><h2 class="groupheader">Métodos</h2>
+<a id="aa8aeaa06f3ae47d27cfd6793735390d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8aeaa06f3ae47d27cfd6793735390d5">&#9670;&nbsp;</a></span>getCorrida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classapp_1_1config_1_1dto_1_1_corridas_d_t_o.html">CorridasDTO</a> app.service.impl.CorridasServiceImpl.getCorrida </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idCorrida</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get de uma dada corrida se disponível no sistema. </p>
+<p>Retorno de corrida para um dado 'id'; </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">int</td><td>- ID da corrida desejada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Objeto do tipo "CorridaDTO". </dd></dl>
+
+<p>Implementa <a class="el" href="interfaceapp_1_1service_1_1_corridas_service.html#afa6e92f9f3047712dbc7434f59644b95">app.service.CorridasService</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aec999ec35bf2cd4300d815e4ccc4818e">getCorridaDTOFromCorrida</a>(<a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#af929dd552ee68f2ca11f429344afd911">corridasRepository</a>.getOne(idCorrida));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aec999ec35bf2cd4300d815e4ccc4818e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec999ec35bf2cd4300d815e4ccc4818e">&#9670;&nbsp;</a></span>getCorridaDTOFromCorrida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classapp_1_1config_1_1dto_1_1_corridas_d_t_o.html">CorridasDTO</a> app.service.impl.CorridasServiceImpl.getCorridaDTOFromCorrida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classapp_1_1domain_1_1entities_1_1_corridas.html">Corridas</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Para uma dada corrida, cria um objeto CorridaDTO. </p>
+<p>Método auxiliar que retorna um "CorridaDTO" para uma dada corrida </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Corrida</td><td>- Corrida com dados preenchidos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Objeto populado do tipo "CorridaDTO". </dd></dl>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                            {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        CorridasDTO corridasDTO = <span class="keyword">new</span> CorridasDTO(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                c.getIdCorrida(),</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                c.getDataInicio(),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                c.getOrigem(),</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                c.getDestino(),</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                c.getFkAluguel(),</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                c.getFkCPFPassageiro(),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                c.getTarifa(),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                c.getDistancia(),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                c.getDataFim(),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                c.getAvaliacaoCondutor(),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                c.getAvaliacaoVeiculo()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        AluguelDTO aluguelDTO = <a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a29aad1430e5469736e5dc0e3c24efc2e">aluguelService</a>.<a class="code" href="interfaceapp_1_1service_1_1_aluguel_service.html#ac1f26a8181d53c4fb82ea522e65e0a9f">getAluguel</a>(c.getFkAluguel());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        corridasDTO.<a class="code" href="classapp_1_1config_1_1dto_1_1_aluguel_d_t_o.html#acb25256f786d4f9a45ad9bf4b86d9b8c">setNomeCondutor</a>(aluguelDTO.getNomeCondutor());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        corridasDTO.setNomePassageiro(<a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a7937b3fe9db1da091abea6a18219b097">dadosPessoaService</a>.<a class="code" href="interfaceapp_1_1service_1_1_dados_pessoa_service.html#aa665519b0e09b215ff1721ec1ce6279c">getPassageiro</a>(c.getFkCPFPassageiro()).<a class="code" href="classapp_1_1domain_1_1_abstract_pessoa.html#afc9aebf13289df645c751c1a44e9043a">getNome</a>());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> corridasDTO;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9902d98cc55507816c58adde4c6cd6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9902d98cc55507816c58adde4c6cd6a7">&#9670;&nbsp;</a></span>getCorridas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classapp_1_1config_1_1dto_1_1_corridas_d_t_o.html">CorridasDTO</a>&gt; app.service.impl.CorridasServiceImpl.getCorridas </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get de todas as corridas disponíveis no sistema. </p>
+<p>Retorno de corridas persistidas no banco </p><dl class="section return"><dt>Retorna</dt><dd>Lista de objetos do tipo "CorridaDTO". </dd></dl>
+
+<p>Implementa <a class="el" href="interfaceapp_1_1service_1_1_corridas_service.html#a778603339b2f0548b68b47dea1877b39">app.service.CorridasService</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                          {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        List&lt;CorridasDTO&gt; corridasDTOS = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        List&lt;Corridas&gt; corridas = <a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#af929dd552ee68f2ca11f429344afd911">corridasRepository</a>.findAll();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">for</span> (Corridas c: corridas) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            corridasDTOS.add(this.<a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aec999ec35bf2cd4300d815e4ccc4818e">getCorridaDTOFromCorrida</a>(c));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> corridasDTOS;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa52424ba7d2bc5d5eb66cfd6e8a8cd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52424ba7d2bc5d5eb66cfd6e8a8cd71">&#9670;&nbsp;</a></span>setCorrida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app.service.impl.CorridasServiceImpl.setCorrida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classapp_1_1domain_1_1entities_1_1_corridas.html">Corridas</a>&#160;</td>
+          <td class="paramname"><em>corrida</em></td><td>)</td>
+          <td> throws GenericJDBCException</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set de uma dada corrida se disponível no sistema. </p>
+<p>Persiste uma corrida com os atributos passados pelo usuário oriundos da API; </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Corridas</td><td>- Objeto do tipo "Corridas" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="interfaceapp_1_1service_1_1_corridas_service.html#a3cb5cbbdc9f861d99718095297d85a6c">app.service.CorridasService</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#af929dd552ee68f2ca11f429344afd911">corridasRepository</a>.save(corrida);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }<span class="keywordflow">catch</span> (GenericJDBCException e){</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">throw</span> <span class="keyword">new</span> GenericJDBCException(e.getSQLException().getCause().toString(), e.getSQLException());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a id="a29aad1430e5469736e5dc0e3c24efc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29aad1430e5469736e5dc0e3c24efc2e">&#9670;&nbsp;</a></span>aluguelService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceapp_1_1service_1_1_aluguel_service.html">AluguelService</a> app.service.impl.CorridasServiceImpl.aluguelService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af929dd552ee68f2ca11f429344afd911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af929dd552ee68f2ca11f429344afd911">&#9670;&nbsp;</a></span>corridasRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceapp_1_1repository_1_1_corridas_repository.html">CorridasRepository</a> app.service.impl.CorridasServiceImpl.corridasRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7937b3fe9db1da091abea6a18219b097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7937b3fe9db1da091abea6a18219b097">&#9670;&nbsp;</a></span>dadosPessoaService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfaceapp_1_1service_1_1_dados_pessoa_service.html">DadosPessoaService</a> app.service.impl.CorridasServiceImpl.dadosPessoaService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir do seguinte arquivo:<ul>
+<li>/Users/i501554/Desktop/Bock e Lora - 2019-2/SpringRest/IWantToBeUber/src/main/java/app/service/impl/<a class="el" href="_corridas_service_impl_8java.html">CorridasServiceImpl.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassapp_1_1service_1_1impl_1_1_corridas_service_impl_html_a7937b3fe9db1da091abea6a18219b097"><div class="ttname"><a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a7937b3fe9db1da091abea6a18219b097">app.service.impl.CorridasServiceImpl.dadosPessoaService</a></div><div class="ttdeci">DadosPessoaService dadosPessoaService</div><div class="ttdef"><b>Definition:</b> CorridasServiceImpl.java:27</div></div>
+<div class="ttc" id="aclassapp_1_1service_1_1impl_1_1_corridas_service_impl_html_af929dd552ee68f2ca11f429344afd911"><div class="ttname"><a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#af929dd552ee68f2ca11f429344afd911">app.service.impl.CorridasServiceImpl.corridasRepository</a></div><div class="ttdeci">CorridasRepository corridasRepository</div><div class="ttdef"><b>Definition:</b> CorridasServiceImpl.java:30</div></div>
+<div class="ttc" id="ainterfaceapp_1_1service_1_1_aluguel_service_html_ac1f26a8181d53c4fb82ea522e65e0a9f"><div class="ttname"><a href="interfaceapp_1_1service_1_1_aluguel_service.html#ac1f26a8181d53c4fb82ea522e65e0a9f">app.service.AluguelService.getAluguel</a></div><div class="ttdeci">AluguelDTO getAluguel(int idAluguel)</div></div>
+<div class="ttc" id="aclassapp_1_1service_1_1impl_1_1_corridas_service_impl_html_a29aad1430e5469736e5dc0e3c24efc2e"><div class="ttname"><a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#a29aad1430e5469736e5dc0e3c24efc2e">app.service.impl.CorridasServiceImpl.aluguelService</a></div><div class="ttdeci">AluguelService aluguelService</div><div class="ttdef"><b>Definition:</b> CorridasServiceImpl.java:24</div></div>
+<div class="ttc" id="ainterfaceapp_1_1service_1_1_dados_pessoa_service_html_aa665519b0e09b215ff1721ec1ce6279c"><div class="ttname"><a href="interfaceapp_1_1service_1_1_dados_pessoa_service.html#aa665519b0e09b215ff1721ec1ce6279c">app.service.DadosPessoaService.getPassageiro</a></div><div class="ttdeci">Passageiros getPassageiro(String CPF)</div></div>
+<div class="ttc" id="aclassapp_1_1domain_1_1_abstract_pessoa_html_afc9aebf13289df645c751c1a44e9043a"><div class="ttname"><a href="classapp_1_1domain_1_1_abstract_pessoa.html#afc9aebf13289df645c751c1a44e9043a">app.domain.AbstractPessoa.getNome</a></div><div class="ttdeci">String getNome()</div><div class="ttdef"><b>Definition:</b> AbstractPessoa.java:33</div></div>
+<div class="ttc" id="aclassapp_1_1config_1_1dto_1_1_aluguel_d_t_o_html_acb25256f786d4f9a45ad9bf4b86d9b8c"><div class="ttname"><a href="classapp_1_1config_1_1dto_1_1_aluguel_d_t_o.html#acb25256f786d4f9a45ad9bf4b86d9b8c">app.config.dto.AluguelDTO.setNomeCondutor</a></div><div class="ttdeci">void setNomeCondutor(String nomeCondutor)</div><div class="ttdef"><b>Definition:</b> AluguelDTO.java:85</div></div>
+<div class="ttc" id="aclassapp_1_1service_1_1impl_1_1_corridas_service_impl_html_aec999ec35bf2cd4300d815e4ccc4818e"><div class="ttname"><a href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html#aec999ec35bf2cd4300d815e4ccc4818e">app.service.impl.CorridasServiceImpl.getCorridaDTOFromCorrida</a></div><div class="ttdeci">CorridasDTO getCorridaDTOFromCorrida(Corridas c)</div><div class="ttdoc">Para uma dada corrida, cria um objeto CorridaDTO.</div><div class="ttdef"><b>Definition:</b> CorridasServiceImpl.java:63</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceapp.html">app</a></li><li class="navelem"><a class="el" href="namespaceapp_1_1service.html">service</a></li><li class="navelem"><a class="el" href="namespaceapp_1_1service_1_1impl.html">impl</a></li><li class="navelem"><a class="el" href="classapp_1_1service_1_1impl_1_1_corridas_service_impl.html">CorridasServiceImpl</a></li>
+    <li class="footer">Gerado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>
